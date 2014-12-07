@@ -3,6 +3,8 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'spotify',
+    podModulePrefix: 'spotify/modules',
+    usePodsByDefault: true,
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
