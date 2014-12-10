@@ -7,10 +7,6 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('discover');
-  this.resource('search', { path: 'search/:query' }, function() {
-    this.route('search');
-  });
-  this.resource('artist', { path: 'artists/:artist_id' }, function() { });
 });
 
 export default Router;
