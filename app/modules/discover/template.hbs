@@ -7,3 +7,12 @@
     action="runSearch"}}
   {{outlet}}
 </section>
+<section class="results">
+  <ul>
+    {{#each artist in model}}
+      <li>Popularity: {{artist.popularity}} - <strong>{{artist.name}}</strong></li>
+    {{else}}
+      No results found for {{queryField}}
+    {{/each}}
+  </ul>
+</section>
