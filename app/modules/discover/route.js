@@ -13,7 +13,7 @@ export default Ember.Route.extend({
       return [];
     }
 
-    return this.store.find('search', {
+    return this.store.findQuery('artist', {
       q: params.query
     });
   }
